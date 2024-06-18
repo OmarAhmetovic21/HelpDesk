@@ -195,7 +195,6 @@ function DashBoard() {
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
       </div>
     </>
   );
