@@ -20,7 +20,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
 
-function LoginPage() {
+function Login() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
@@ -140,4 +140,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default Login;
