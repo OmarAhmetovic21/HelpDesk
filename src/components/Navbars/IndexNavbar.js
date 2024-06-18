@@ -83,7 +83,7 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
-              <NavItem>
+              {/*<NavItem>
                 <NavLink
                   href="#pablo"
                   onClick={(e) => {
@@ -96,8 +96,8 @@ function IndexNavbar() {
                   <i className="now-ui-icons arrows-1_cloud-download-93"></i>
                   <p>Download</p>
                 </NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav>
+              </NavItem>*/}
+              {/*<UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -121,8 +121,8 @@ function IndexNavbar() {
                     Documentation
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
+              </UncontrolledDropdown>*/}
+              {/*<NavItem>
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
@@ -136,8 +136,8 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#upgrade-to-pro">
                   Cooming soon!
                 </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
+              </NavItem>*/}
+              {/*<NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
@@ -149,8 +149,8 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#twitter-tooltip">
                   Follow us on Twitter
                 </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
+              </NavItem>*/}
+              {/*<NavItem>
                 <NavLink
                   href="https://www.facebook.com/CreativeTim?ref=creativetim"
                   target="_blank"
@@ -162,8 +162,8 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#facebook-tooltip">
                   Like us on Facebook
                 </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
+              </NavItem>*/}
+              {/*<NavItem>
                 <NavLink
                   href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
                   target="_blank"
@@ -175,7 +175,7 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on Instagram
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem>*/}
             </Nav>
           </Collapse>
         </Container>
