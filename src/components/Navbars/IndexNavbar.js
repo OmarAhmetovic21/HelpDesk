@@ -54,9 +54,9 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              to="/index"
+              /*to="/index"
               id="navbar-brand"
-              tag={Link}
+              tag={Link}*/
             >
               Help Desk
             </NavbarBrand>

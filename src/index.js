@@ -38,14 +38,14 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
+      <Route path="/" element={<Login />} />
       <Route path="/index" element={<Index />} />
       <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<DashBoard />} />
 
-      <Route path="*" element={<Navigate to="/index" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   </BrowserRouter>
 );

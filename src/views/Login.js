@@ -61,6 +61,7 @@ function Login() {
                     </div>*/}
                   </CardHeader>
                   <CardBody>
+                  <h4>Email</h4>
                     <InputGroup
                       className={
                         "no-border input-lg" +
@@ -72,13 +73,15 @@ function Login() {
                           <i className="now-ui-icons users_circle-08"></i>
                         </InputGroupText>
                       </InputGroupAddon>
+                      
                       <Input
-                        placeholder="email"
+                        placeholder="ime.prezime@sarajevogas.ba"
                         type="text"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
                       ></Input>
                     </InputGroup>
+                    <h4>Password</h4>
                     <InputGroup
                       className={
                         "no-border input-lg" +
@@ -91,7 +94,7 @@ function Login() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="password"
+                        placeholder="Unesite vaš password"
                         type="password"
                         onFocus={() => setLastFocus(true)}
                         onBlur={() => setLastFocus(false)}
