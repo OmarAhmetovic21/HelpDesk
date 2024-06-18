@@ -43,19 +43,22 @@ function Login() {
           style={{
             backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
           }}
-        ></div>
+        >
+          
+        </div>
         <div className="content">
           <Container>
             <Col className="ml-auto mr-auto" md="4">
               <Card className="card-login card-plain">
                 <Form action="" className="form" method="">
                   <CardHeader className="text-center">
-                    <div className="logo-container">
+                    {/*<h4>Login</h4>
+                    {/*<div className="logo-container">
                       <img
                         alt="..."
                         src={require("assets/img/now-logo.png")}
                       ></img>
-                    </div>
+                    </div>*/}
                   </CardHeader>
                   <CardBody>
                     <InputGroup
@@ -104,9 +107,9 @@ function Login() {
                       onClick={(e) => e.preventDefault()}
                       size="lg"
                     >
-                      Get Started
+                      Login
                     </Button>
-                    <div className="pull-left">
+                    {/*<div className="text-center">
                       <h6>
                         <a
                           className="link"
@@ -116,18 +119,7 @@ function Login() {
                           Create Account
                         </a>
                       </h6>
-                    </div>
-                    <div className="pull-right">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Need Help?
-                        </a>
-                      </h6>
-                    </div>
+                    </div>*/}
                   </CardFooter>
                 </Form>
               </Card>
