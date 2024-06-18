@@ -54,15 +54,15 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
-              target="_blank"
+              to="/index"
               id="navbar-brand"
+              tag={Link}
             >
-              Now UI Kit React
+              Help Desk
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
+            {/*<UncontrolledTooltip target="#navbar-brand">
               Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
+            </UncontrolledTooltip>*/}
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
