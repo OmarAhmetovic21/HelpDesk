@@ -41,7 +41,7 @@ function DashBoard() {
         <div className="section">
           <Container>
             <div className="button-container">
-              <Button className="btn-round" color="info" size="lg" to="/" tag={Link}>
+              <Button className="btn-round" color="info" size="lg" to="/index" tag={Link}>
                 Login page
               </Button>
             </div>
