@@ -18,7 +18,7 @@ import {
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar";
-import TransparentFooter from "components/Footers/TransparentFooter.js";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -103,9 +103,10 @@ function Login() {
                       block
                       className="btn-round"
                       color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      to="/dashboard"
+                      //onClick={(e) => e.preventDefault()}
                       size="lg"
+                      tag={Link}
                     >
                       Login
                     </Button>
@@ -126,7 +127,6 @@ function Login() {
             </Col>
           </Container>
         </div>
-        <TransparentFooter />
       </div>
     </>
   );
