@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BrowserView, MobileView} from 'react-device-detect';
 
 // reactstrap components
 import {
@@ -37,6 +38,7 @@ function DashBoard() {
     <>
       {/*<IndexNavbar />*/}
       <div className="content">
+        <BrowserView>
         <Row className="text-center">
           <Col style={{backgroundColor:"white"}}>
           <img alt="..." style={{width:"25%", height:"100%", boxShadow:"none"}} className="img-raised" src={require("assets/img/SarajevogasLogo2.jpg")}></img>
@@ -48,6 +50,78 @@ function DashBoard() {
           </Col>
         </Row>
 
+        <Row className="text-center">
+          <Col style={{backgroundColor:"white"}}>
+          <h5 className="text-center" style={{color:"#224798", fontWeight:"bold",marginTop:"1%"}}>Dobro Došli</h5>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col style={{backgroundColor:"white"}}>
+          <h6 style={{marginLeft:"20%",color:"#224798", fontWeight:"bold",marginTop:"1%"}}>Taskovi <i style={{marginLeft:"2%", height:"20%", width:"20%"}} class="fas fa-plus"></i></h6>
+          
+          </Col>
+        </Row>
+
+
+        <Row className="text-center">
+          <Col className="text-center">
+          <Button className="btn-round text-center" style={{backgroundColor:"#224798", width:"20%"}}
+        to="/index"
+        //onClick={(e) => e.preventDefault()}
+        size="lg"
+        tag={Link}
+      >
+        Logout
+      </Button>
+      </Col>
+
+        </Row>
+
+        </BrowserView>
+
+        <MobileView>
+        <Row className="text-center">
+          <Col style={{backgroundColor:"white"}}>
+          <img alt="..." style={{width:"25%", height:"100%", boxShadow:"none"}} className="img-raised" src={require("assets/img/SarajevogasLogo2.jpg")}></img>
+          </Col>
+        </Row>
+        <Row className="text-center">
+          <Col style={{backgroundColor:"green"}}>
+          <h6 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"1%"}}>Help Desk</h6>
+          </Col>
+        </Row>
+
+        <Row className="text-center">
+          <Col style={{backgroundColor:"white"}}>
+          <h6 className="text-center" style={{color:"#224798", fontWeight:"bold",marginTop:"1%"}}>Dobro Došli</h6>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col style={{backgroundColor:"white"}}>
+          <h7 style={{marginLeft:"20%",color:"#224798", fontWeight:"bold",marginTop:"1%"}}>Taskovi <i style={{marginLeft:"2%", height:"10%", width:"10%"}} class="fas fa-plus"></i></h7>
+          
+          </Col>
+        </Row>
+
+
+        <Row className="text-center">
+          <Col className="text-center">
+          <Button className="btn-round text-center" style={{backgroundColor:"#224798", width:"40%"}}
+        to="/index"
+        //onClick={(e) => e.preventDefault()}
+        size="lg"
+        tag={Link}
+      >
+        Logout
+      </Button>
+      </Col>
+
+        </Row>
+
+
+        </MobileView>
       </div>
     </>
   );
