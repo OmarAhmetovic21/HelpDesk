@@ -27,6 +27,7 @@ function Login() {
     <>
         <div className="content">
 
+          <BrowserView>
           <Row className="text-center" style={{height:"100vh", margin:"0"}}>
             <Col style={{backgroundColor:"green"}} md="4">
                 <img alt="..." style={{marginTop:"50%",borderRadius:"50%", width:"15%", height:"10%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
@@ -40,7 +41,7 @@ function Login() {
                     <h4 style={{color:"#224798", fontWeight:"bold"}}>Login</h4>
                   </CardHeader>
                   <CardBody>
-                  <h5 style={{color:"#224798", float:"left",marginLeft:"5%"}}>Email</h5>
+                  <h5 style={{color:"#224798", float:"left"}}>Email</h5>
                     <InputGroup
                       className={
                         "no-border input-lg" +
@@ -54,7 +55,7 @@ function Login() {
                         onBlur={() => setFirstFocus(false)}
                       ></Input>
                     </InputGroup>
-                    <h5 style={{color:"#224798", float:"left", marginLeft:"5%"}}>Password</h5>
+                    <h5 style={{color:"#224798", float:"left"}}>Password</h5>
                     <InputGroup
                       className={
                         "no-border input-lg" +
@@ -97,6 +98,80 @@ function Login() {
               </Card>
             </Col>
           </Row>
+          </BrowserView>
+
+          <MobileView>
+          <Row className="text-center" style={{margin:"0"}}>
+            <Col style={{backgroundColor:"green"}} md="4">
+                <img alt="..." style={{marginTop:"10%",borderRadius:"50%", width:"7%", height:"20%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
+                <h5 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"2.5%"}}>Sarajevogas Help Desk</h5>
+            </Col>            
+
+            <Col className="text-center" style={{backgroundColor:"white"}}>
+              <Card className="card-login card-plain">
+                <Form style={{marginTop:"20%"}} action="" className="form" method="">
+                  <CardHeader className="text-center">
+                    <h4 style={{color:"#224798", fontWeight:"bold"}}>Login</h4>
+                  </CardHeader>
+                  <CardBody>
+                  <h5 style={{color:"#224798", float:"left"}}>Email</h5>
+                    <InputGroup
+                      className={
+                        "no-border input-lg" +
+                        (firstFocus ? " input-group-focus" : "")
+                      }
+                    >  
+                      <Input style={{borderRadius:"2px",backgroundColor:"white", border:"1px solid green", borderColor:"green", color:"black"}}
+                        placeholder="ime.prezime@sarajevogas.ba"
+                        type="text"
+                        onFocus={() => setFirstFocus(true)}
+                        onBlur={() => setFirstFocus(false)}
+                      ></Input>
+                    </InputGroup>
+                    <h5 style={{color:"#224798", float:"left"}}>Password</h5>
+                    <InputGroup
+                      className={
+                        "no-border input-lg" +
+                        (lastFocus ? " input-group-focus" : "")
+                      }
+                    >
+                      <Input style={{borderRadius:"2px",backgroundColor:"white", border:"1px solid green", borderColor:"green",color:"black"}}
+                        placeholder="Unesite vaš password"
+                        type="password"
+                        onFocus={() => setLastFocus(true)}
+                        onBlur={() => setLastFocus(false)}
+                      ></Input>
+                    </InputGroup>
+                  </CardBody>
+                  <CardFooter className="text-center">
+                    <Button 
+                      block
+                      className="btn-round"
+                      style={{backgroundColor:"#224798"}}
+                      to="/dashboard"
+                      //onClick={(e) => e.preventDefault()}
+                      size="lg"
+                      tag={Link}
+                    >
+                      Login
+                    </Button>
+                    {/*<div className="text-center">
+                      <h6>
+                        <a
+                          className="link"
+                          href="#pablo"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          Create Account
+                        </a>
+                      </h6>
+                    </div>*/}
+                  </CardFooter>
+                </Form>
+              </Card>
+            </Col>
+          </Row>
+          </MobileView>
 
         </div>
       {/*</div>*/}
