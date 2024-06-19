@@ -13,7 +13,8 @@ import {
   InputGroupText,
   InputGroup,
   Container,
-  Col
+  Col,
+  Row
 } from "reactstrap";
 
 // core components
@@ -36,64 +37,63 @@ function Login() {
   }, []);
   return (
     <>
-      <IndexNavbar />
-      <div className="page-header clear-filter" filter-color="blue">
-        <div
+      {/*<IndexNavbar />*/}
+      {/*<div  className="page-header" style={{backgroundColor:"green"}}>*/}
+        {/*<div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
+            background: "url(" + require("assets/img/login.jpg") + ")"
           }}
         >
           
-        </div>
+        </div>*/}
+
         <div className="content">
-          <Container>
-            <Col className="ml-auto mr-auto" md="4">
+
+          {/*<Row className="text-center" style={{backgroundColor:"green"}}>
+            <Col style={{marginTop:"2%"}}>
+            <img alt="..." style={{borderRadius:"50%", width:"5%", height:"55%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
+            <h5 style={{color:"white", fontWeight:"bold", marginTop:"1%"}}>Sarajevogas Help Desk</h5>
+            </Col>
+          </Row>*/}
+          <Row className="text-center" style={{height:"100vh", margin:"0"}}>
+            <Col style={{backgroundColor:"green"}} md="4">
+                <img alt="..." style={{marginTop:"50%",borderRadius:"50%", width:"15%", height:"10%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
+                <h5 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"2.5%"}}>Sarajevogas Help Desk</h5>
+            </Col>
+
+            <Col style={{backgroundColor:"white"}}>
               <Card className="card-login card-plain">
-                <Form action="" className="form" method="">
+                <Form style={{marginTop:"50%"}} action="" className="form" method="">
                   <CardHeader className="text-center">
-                    {/*<h4>Login</h4>
-                    {/*<div className="logo-container">
-                      <img
-                        alt="..."
-                        src={require("assets/img/now-logo.png")}
-                      ></img>
-                    </div>*/}
+                    <h4 style={{color:"#224798", fontWeight:"bold"}}>Login</h4>
                   </CardHeader>
                   <CardBody>
-                  <h4>Email</h4>
+                  <h5 style={{color:"#224798", float:"left",marginLeft:"5%"}}>Email</h5>
                     <InputGroup
                       className={
                         "no-border input-lg" +
                         (firstFocus ? " input-group-focus" : "")
                       }
                     >
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="now-ui-icons users_circle-08"></i>
-                        </InputGroupText>
-                      </InputGroupAddon>
+
                       
-                      <Input
+                      <Input style={{borderRadius:"3%",backgroundColor:"white", border:"3px solid green", borderColor:"green", color:"black"}}
                         placeholder="ime.prezime@sarajevogas.ba"
                         type="text"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
                       ></Input>
                     </InputGroup>
-                    <h4>Password</h4>
+                    <h5 style={{color:"#224798", float:"left", marginLeft:"5%"}}>Password</h5>
                     <InputGroup
                       className={
                         "no-border input-lg" +
                         (lastFocus ? " input-group-focus" : "")
                       }
                     >
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="now-ui-icons objects_key-25"></i>
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input
+
+                      <Input style={{borderRadius:"3%",backgroundColor:"white", border:"3px solid green", borderColor:"green",color:"black"}}
                         placeholder="Unesite vaš password"
                         type="password"
                         onFocus={() => setLastFocus(true)}
@@ -102,10 +102,10 @@ function Login() {
                     </InputGroup>
                   </CardBody>
                   <CardFooter className="text-center">
-                    <Button
+                    <Button 
                       block
                       className="btn-round"
-                      color="info"
+                      style={{backgroundColor:"#224798"}}
                       to="/dashboard"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
@@ -128,9 +128,10 @@ function Login() {
                 </Form>
               </Card>
             </Col>
-          </Container>
+          </Row>
+
         </div>
-      </div>
+      {/*</div>*/}
     </>
   );
 }

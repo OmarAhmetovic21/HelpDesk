@@ -2308,7 +2308,7 @@ fieldset[disabled] .btn-link.active {
   color: #0077b5 !important;
 }
 .form-control::-moz-placeholder {
-  color: #888;
+  color: black;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
