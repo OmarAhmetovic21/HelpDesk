@@ -60,9 +60,9 @@ function Login() {
             <Col style={{backgroundColor:"green"}} md="4">
                 <img alt="..." style={{marginTop:"50%",borderRadius:"50%", width:"15%", height:"10%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
                 <h5 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"2.5%"}}>Sarajevogas Help Desk</h5>
-            </Col>
+            </Col>            
 
-            <Col style={{backgroundColor:"white"}}>
+            <Col className="text-center" style={{backgroundColor:"white"}}>
               <Card className="card-login card-plain">
                 <Form style={{marginTop:"50%"}} action="" className="form" method="">
                   <CardHeader className="text-center">
@@ -75,9 +75,7 @@ function Login() {
                         "no-border input-lg" +
                         (firstFocus ? " input-group-focus" : "")
                       }
-                    >
-
-                      
+                    >  
                       <Input style={{borderRadius:"3%",backgroundColor:"white", border:"3px solid green", borderColor:"green", color:"black"}}
                         placeholder="ime.prezime@sarajevogas.ba"
                         type="text"
@@ -92,7 +90,6 @@ function Login() {
                         (lastFocus ? " input-group-focus" : "")
                       }
                     >
-
                       <Input style={{borderRadius:"3%",backgroundColor:"white", border:"3px solid green", borderColor:"green",color:"black"}}
                         placeholder="Unesite vaš password"
                         type="password"
