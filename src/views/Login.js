@@ -1,21 +1,9 @@
 import React from "react";
+import { BrowserView, MobileView} from 'react-device-detect';
 
 // reactstrap components
-import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Col,
-  Row
-} from "reactstrap";
+import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupAddon, InputGroupText,
+  InputGroup, Container, Col, Row} from "reactstrap";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar";
@@ -37,25 +25,8 @@ function Login() {
   }, []);
   return (
     <>
-      {/*<IndexNavbar />*/}
-      {/*<div  className="page-header" style={{backgroundColor:"green"}}>*/}
-        {/*<div
-          className="page-header-image"
-          style={{
-            background: "url(" + require("assets/img/login.jpg") + ")"
-          }}
-        >
-          
-        </div>*/}
-
         <div className="content">
 
-          {/*<Row className="text-center" style={{backgroundColor:"green"}}>
-            <Col style={{marginTop:"2%"}}>
-            <img alt="..." style={{borderRadius:"50%", width:"5%", height:"55%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
-            <h5 style={{color:"white", fontWeight:"bold", marginTop:"1%"}}>Sarajevogas Help Desk</h5>
-            </Col>
-          </Row>*/}
           <Row className="text-center" style={{height:"100vh", margin:"0"}}>
             <Col style={{backgroundColor:"green"}} md="4">
                 <img alt="..." style={{marginTop:"50%",borderRadius:"50%", width:"15%", height:"10%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
@@ -76,7 +47,7 @@ function Login() {
                         (firstFocus ? " input-group-focus" : "")
                       }
                     >  
-                      <Input style={{borderRadius:"3%",backgroundColor:"white", border:"1px solid green", borderColor:"green", color:"black"}}
+                      <Input style={{borderRadius:"2px",backgroundColor:"white", border:"1px solid green", borderColor:"green", color:"black"}}
                         placeholder="ime.prezime@sarajevogas.ba"
                         type="text"
                         onFocus={() => setFirstFocus(true)}
@@ -90,7 +61,7 @@ function Login() {
                         (lastFocus ? " input-group-focus" : "")
                       }
                     >
-                      <Input style={{borderRadius:"3%",backgroundColor:"white", border:"1px solid green", borderColor:"green",color:"black"}}
+                      <Input style={{borderRadius:"2px",backgroundColor:"white", border:"1px solid green", borderColor:"green",color:"black"}}
                         placeholder="Unesite vaš password"
                         type="password"
                         onFocus={() => setLastFocus(true)}
