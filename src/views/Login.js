@@ -93,17 +93,17 @@ function Login() {
           <Row className="text-center" style={{margin:"0"}}>
             <Col style={{backgroundColor:"green"}} md="4">
                 <img alt="..." style={{marginTop:"10%",borderRadius:"50%", width:"7%", height:"20%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
-                <h5 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"2.5%"}}>Sarajevogas Help Desk</h5>
+                <h6 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"2.5%"}}>Sarajevogas Help Desk</h6>
             </Col>            
 
             <Col className="text-center" style={{backgroundColor:"white"}}>
               <Card className="card-login card-plain">
                 <Form style={{marginTop:"20%"}} action="" className="form" method="">
                   <CardHeader className="text-center">
-                    <h4 style={{color:"#224798", fontWeight:"bold"}}>Login</h4>
+                    <h5 style={{color:"#224798", fontWeight:"bold"}}>Login</h5>
                   </CardHeader>
                   <CardBody>
-                  <h5 style={{color:"#224798", float:"left"}}>Email</h5>
+                  <h6 style={{color:"#224798", float:"left"}}>Email</h6>
                     <InputGroup
                       className={
                         "no-border input-lg" +
@@ -117,7 +117,7 @@ function Login() {
                         onBlur={() => setFirstFocus(false)}
                       ></Input>
                     </InputGroup>
-                    <h5 style={{color:"#224798", float:"left"}}>Password</h5>
+                    <h6 style={{color:"#224798", float:"left"}}>Password</h6>
                     <InputGroup
                       className={
                         "no-border input-lg" +
