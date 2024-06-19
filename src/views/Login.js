@@ -82,17 +82,6 @@ function Login() {
                     >
                       Login
                     </Button>
-                    {/*<div className="text-center">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Create Account
-                        </a>
-                      </h6>
-                    </div>*/}
                   </CardFooter>
                 </Form>
               </Card>
