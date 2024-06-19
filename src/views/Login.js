@@ -76,7 +76,7 @@ function Login() {
                         (firstFocus ? " input-group-focus" : "")
                       }
                     >  
-                      <Input style={{borderRadius:"3%",backgroundColor:"white", border:"3px solid green", borderColor:"green", color:"black"}}
+                      <Input style={{borderRadius:"3%",backgroundColor:"white", border:"1px solid green", borderColor:"green", color:"black"}}
                         placeholder="ime.prezime@sarajevogas.ba"
                         type="text"
                         onFocus={() => setFirstFocus(true)}
@@ -90,7 +90,7 @@ function Login() {
                         (lastFocus ? " input-group-focus" : "")
                       }
                     >
-                      <Input style={{borderRadius:"3%",backgroundColor:"white", border:"3px solid green", borderColor:"green",color:"black"}}
+                      <Input style={{borderRadius:"3%",backgroundColor:"white", border:"1px solid green", borderColor:"green",color:"black"}}
                         placeholder="Unesite vaš password"
                         type="password"
                         onFocus={() => setLastFocus(true)}
