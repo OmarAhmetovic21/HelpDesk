@@ -30,7 +30,7 @@ function Login() {
           <BrowserView>
           <Row className="text-center" style={{height:"100vh", margin:"0"}}>
             <Col style={{backgroundColor:"green"}} md="4">
-                <img alt="..." style={{marginTop:"50%",borderRadius:"50%", width:"11%", height:"7.5%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
+                <img alt="..." style={{boxShadow:"none",marginTop:'50%',borderRadius:"50%", width:"11%", height:"7.5%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
                 <h5 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"2.5%"}}>Sarajevogas Help Desk</h5>
             </Col>            
 
@@ -91,8 +91,8 @@ function Login() {
 
           <MobileView>
           <Row className="text-center" style={{margin:"0"}}>
-            <Col style={{backgroundColor:"green"}} md="4">
-                <img alt="..." style={{marginTop:"10%",borderRadius:"50%", width:"7%", height:"20%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
+            <Col style={{backgroundColor:"green", alignItems:"center",justifyContent:"center"}} md="4">
+                <img alt="..." style={{boxShadow:"none",marginTop:"5%",borderRadius:"50%", width:"7%", height:"20%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
                 <h6 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"2.5%"}}>Sarajevogas Help Desk</h6>
             </Col>            
 
