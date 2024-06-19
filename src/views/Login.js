@@ -30,7 +30,7 @@ function Login() {
           <BrowserView>
           <Row className="text-center" style={{height:"100vh", margin:"0"}}>
             <Col style={{backgroundColor:"green"}} md="4">
-                <img alt="..." style={{marginTop:"50%",borderRadius:"50%", width:"15%", height:"10%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
+                <img alt="..." style={{marginTop:"50%",borderRadius:"50%", width:"11%", height:"7.5%"}} className="img-raised" src={require("assets/img/SarajevogasLogo.jpg")}></img>
                 <h5 className="text-center" style={{color:"white", fontWeight:"bold",marginTop:"2.5%"}}>Sarajevogas Help Desk</h5>
             </Col>            
 
