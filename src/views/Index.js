@@ -8,7 +8,6 @@ import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
-import Card from "components/Card/Card.js";
 
 // sections for this page
 import Images from "./index-sections/Images.js";

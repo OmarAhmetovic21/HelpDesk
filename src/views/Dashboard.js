@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BrowserView, MobileView} from 'react-device-detect';
 
+
 // reactstrap components
 import {
   Button,
@@ -60,6 +61,12 @@ function DashBoard() {
           <Col style={{backgroundColor:"white"}}>
           <h6 style={{marginLeft:"20%",color:"#224798", fontWeight:"bold",marginTop:"1%"}}>Taskovi <i style={{marginLeft:"2%", height:"20%", width:"20%"}} class="fas fa-plus"></i></h6>
           
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+
           </Col>
         </Row>
 
