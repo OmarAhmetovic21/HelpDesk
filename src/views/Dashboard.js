@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BrowserView, MobileView} from 'react-device-detect';
-
+import CardComponent from "components/Card/CardComponent";
 
 // reactstrap components
 import {
@@ -64,16 +64,16 @@ function DashBoard() {
           </Col>
         </Row>
 
-        <Row>
-          <Col>
-
+        <Row style={{marginTop:'5%'}}>
+          <Col style={{marginLeft:'15%'}}>
+           <CardComponent/>
           </Col>
         </Row>
 
 
-        <Row className="text-center">
-          <Col className="text-center">
-          <Button className="btn-round text-center" style={{backgroundColor:"#224798", width:"20%"}}
+        <Row className="text-center" style={{marginTop:'5%', display:'flex', justifyContent:'center'}}>
+          <Col className="text-center" style={{justifyContent:'center', display:'flex'}}>
+          <Button className="btn-round text-center" style={{justifyContent:'center',display:'flex',backgroundColor:"#224798", width:"20%"}}
         to="/index"
         //onClick={(e) => e.preventDefault()}
         size="lg"
