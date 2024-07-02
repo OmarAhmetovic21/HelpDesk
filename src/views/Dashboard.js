@@ -18,9 +18,6 @@ import {
 } from "reactstrap";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar";
-import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
 
 function DashBoard() {
   const [pills, setPills] = React.useState("2");
