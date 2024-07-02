@@ -34,7 +34,6 @@ function DashBoard() {
   }, []);
   return (
     <>
-      {/*<IndexNavbar />*/}
       <div className="content">
         <BrowserView>
         <Row className="text-center">

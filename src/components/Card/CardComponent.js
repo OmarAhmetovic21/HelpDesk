@@ -7,7 +7,6 @@ import './CardComponent.scss';
   InputGroup, Container, Col, Row} from "reactstrap";*/
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar";
 import { Link } from "react-router-dom";
 
 function CardComponent() {

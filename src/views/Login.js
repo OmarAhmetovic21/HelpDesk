@@ -6,7 +6,6 @@ import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupA
   InputGroup, Container, Col, Row} from "reactstrap";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar";
 import { Link } from "react-router-dom";
 
 function Login() {
@@ -25,7 +24,6 @@ function Login() {
   }, []);
   return (
     <>
-        <div className="content">
 
           <BrowserView>
           <Row className="text-center" style={{height:"100vh", margin:"0"}}>
@@ -161,8 +159,6 @@ function Login() {
             </Col>
           </Row>
           </MobileView>
-
-        </div>
       {/*</div>*/}
     </>
   );
