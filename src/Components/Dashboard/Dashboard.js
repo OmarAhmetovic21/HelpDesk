@@ -2,6 +2,7 @@ import './Dashboard.css';
 import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupAddon, InputGroupText,
   InputGroup, Container, Col, Row} from "reactstrap";
 import { Link } from 'react-router-dom';
+import CardComponent from '../Card/Card';
 
 function DashBoard() {
   return (
@@ -26,11 +27,21 @@ function DashBoard() {
         </div>
 
         <div className='task-heading'>
-            <h3 style={{margin:"0", color:"#224798", marginLeft:"20%"}}>Taskovi</h3>
+            <h3 style={{margin:"0", color:"#224798", marginLeft:"20%"}}>Taskovi </h3>
+            <Button style={{textAlign:"center", textDecoration:"none"}} className='button-add' 
+                      //onClick={(e) => e.preventDefault()}
+                      size="lg"
+                      tag={Link}> <img style={{width:"25%", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img>
+                      
+              </Button>
+            
+        </div>
+        <div className='card-div'>
+        <CardComponent/>
         </div>
 
-        <div className='footer-div'>
-        <Button style={{textAlign:"center", textDecoration:"none"}} className='button' to="/index"
+        <div className='footer-div' style={{marginTop:"10%"}}>
+        <Button style={{textAlign:"center", textDecoration:"none", width:"10%"}} className='button' to="/index"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
                       tag={Link}>Logout</Button>
