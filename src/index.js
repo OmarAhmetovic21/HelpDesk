@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import DashBoard from './Components/Dashboard/Dashboard';
 import Login from './Components/Login/Login';
 import CardComponent from './Components/Card/Card';
+import AddEditTask from './Components/Add-Edit-Task/Add-Edit-Task';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
