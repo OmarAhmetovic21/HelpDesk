@@ -3,13 +3,19 @@ import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupA
   InputGroup, Container, Col, Row} from "reactstrap";
 import { Link } from 'react-router-dom';
 import CardComponent from '../Card/Card';
+import { useState } from 'react';
+import AddEditTask from '../Add-Edit-Task/Add-Edit-Task';
 
 function DashBoard() {
+const [modal, setModal] = useState(false);
+
+const toggleModal = () => {
+  setModal(!modal)
+}
+
   return (
     <>
-
-
-
+        <AddEditTask/>
         <div className='body-dashboard'>
         <div className='image-div'>
           <img style={{width:"25%", height:"100%"}} src="SarajevogasLogo2.jpg" alt="SarajevoGas Logo"></img>
@@ -28,12 +34,13 @@ function DashBoard() {
 
         <div className='task-heading'>
             <h3 style={{margin:"0", color:"#224798", marginLeft:"20%"}}>Taskovi </h3>
-            <Button style={{textAlign:"center", textDecoration:"none"}} className='button-add' 
-                      //onClick={(e) => e.preventDefault()}
+            <AddEditTask/>
+            {/*<Button style={{textAlign:"center", textDecoration:"none"}} className='button-add'
+                      onClick={toggleModal}
                       size="lg"
                       tag={Link}> <img style={{width:"25%", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img>
                       
-              </Button>
+              </Button>*/}
             
         </div>
         <div className='card-div'>

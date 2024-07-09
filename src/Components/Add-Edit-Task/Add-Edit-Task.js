@@ -2,6 +2,8 @@ import React from "react";
 import './Add-Edit-Task.css';
 import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+
 
 // reactstrap components
 /*import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupAddon, InputGroupText,
@@ -9,35 +11,47 @@ import { Link } from "react-router-dom";
 
 
 function AddEditTask() {
-/*  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
-  React.useEffect(() => {
-    document.body.classList.add("login-page");
-    document.body.classList.add("sidebar-collapse");
-    document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-    return function cleanup() {
-      document.body.classList.remove("login-page");
-      document.body.classList.remove("sidebar-collapse");
-    };
-  }, []);*/
+  const [modal, setModal] = useState(false);
+
+const toggleModal = () => {
+  setModal(!modal)
+}
+
   return (
-    <>
-         <div className="login-box">
-                    <h2 style={{color:"#224798"}}>Login</h2>
+    <>  
+    <Button style={{textAlign:"center", textDecoration:"none"}} className='button-add'
+                      onClick={toggleModal}
+                      size="lg"
+                      tag={Link}> <img style={{width:"25%", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img>
+                      
+    </Button>
+    {modal && (
+         <div className="modal">
+          <div className="overlay"></div>
+            <div className="modal-content">
+            <Button className="button-close" onClick={toggleModal}><img style={{width:"40%", height:"40%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
+            <div className="login-box" style={{marginTop:"25%"}}>
+                    <h2 style={{color:"#224798"}}>Dodajte Task</h2>
                     <form>
-                        <label style={{color:"#224798"}} for="email">Email</label>
+                        <label style={{color:"#224798"}} for="email">Naslov</label>
                         <input type="email" id="email" placeholder="ime.prezime@sarajevogas.ba"></input>
-                        <labe style={{color:"#224798"}} for="password">Password</labe>
+                        <labe style={{color:"#224798"}} for="password">Opis</labe>
                         <input type="password" id="password" placeholder="Unesi svoj password"></input>
                         <Button style={{textAlign:"center", textDecoration:"none"}} className='button' to="/dashboard"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
-                      tag={Link}>Login</Button>
+                      tag={Link}>Sačuvaj</Button>
  
                     </form>
                 </div>
+            </div>
+
+   
+
+
+       </div>
+       
+          )}
     </>
   );
 }
