@@ -1,9 +1,11 @@
 
 import React from "react";
 import './Login.css';
+import { BrowserView, MobileView } from "react-device-detect";
 import { Link } from "react-router-dom";
 import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupAddon, InputGroupText,
   InputGroup, Container, Col, Row} from "reactstrap";
+
 
 
 function Login() {

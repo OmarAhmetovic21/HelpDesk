@@ -4,6 +4,7 @@ import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupA
 import { Link } from 'react-router-dom';
 import CardComponent from '../Card/Card';
 import { useState } from 'react';
+import { BrowserView, MobileView } from "react-device-detect";
 import AddEditTask from '../Add-Edit-Task/Add-Edit-Task';
 
 function DashBoard() {
