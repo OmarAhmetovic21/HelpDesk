@@ -31,12 +31,12 @@ const toggleModal = () => {
             <div className="modal-content">
             <Button className="button-close" onClick={toggleModal}><img style={{width:"40%", height:"40%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
             <div className="login-box" style={{marginTop:"25%"}}>
-                    <h2 style={{color:"#224798"}}>Dodajte Task</h2>
+                    <h2 style={{color:"#224798", textAlign:"center"}}>Dodajte Task</h2>
                     <form>
                         <label style={{color:"#224798"}} for="email">Naslov</label>
-                        <input type="email" id="email" placeholder="ime.prezime@sarajevogas.ba"></input>
+                        <input type="email" id="email"></input>
                         <labe style={{color:"#224798"}} for="password">Opis</labe>
-                        <input type="password" id="password" placeholder="Unesi svoj password"></input>
+                        <input type="password" id="password"></input>
                         <Button style={{textAlign:"center", textDecoration:"none"}} className='button' to="/dashboard"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
