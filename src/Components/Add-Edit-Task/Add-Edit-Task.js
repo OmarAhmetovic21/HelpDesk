@@ -3,6 +3,7 @@ import './Add-Edit-Task.css';
 import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import { BrowserView, MobileView } from "react-device-detect";
 
 
 // reactstrap components
@@ -18,7 +19,7 @@ const toggleModal = () => {
 }
 
   return (
-    <>  
+    <>
     <Button style={{textAlign:"center", textDecoration:"none"}} className='button-add'
                       onClick={toggleModal}
                       size="lg"
@@ -52,6 +53,7 @@ const toggleModal = () => {
        </div>
        
           )}
+
     </>
   );
 }

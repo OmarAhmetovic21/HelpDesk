@@ -1,5 +1,6 @@
 import React from "react";
 import './Card.css';
+import { BrowserView, MobileView } from "react-device-detect";
 
 // reactstrap components
 /*import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupAddon, InputGroupText,
