@@ -23,24 +23,20 @@ function CardComponent() {
   return (
     <>
         <div className="card-container">
-            <div className="card-content">
 
-            <div className="card-title text-center">
-                 <h3 style={{marginTop:'20px'}}>Zadatak 1</h3>
-            </div>
+            <h3 style={{textAlign:"center"}}>Zadatak 1</h3>
 
-            <div className="card-title text-center">
-                 <p>Odnijeti računare</p>
-            </div>
+                 <p style={{marginLeft:"5%"}}>Odnijeti računare</p>
 
-            </div>
-
-            <div className="content-center">
-                <h4 style={{color:'#224798', display: 'flex', justifyContent: 'center'}}>
+            <div className="card-footer">
+                <h4 style={{color:'#224798', textAlign: 'center'}}>
                     Više detalja
                 </h4>
 
             </div>
+
+
+
 
 
 
