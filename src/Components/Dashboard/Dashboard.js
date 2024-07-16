@@ -16,6 +16,7 @@ const toggleModal = () => {
 
   return (
     <>
+    <BrowserView>
         <div className='body-dashboard'>
         <div className='image-div'>
           <img style={{width:"25%", height:"100%"}} src="SarajevogasLogo2.jpg" alt="SarajevoGas Logo"></img>
@@ -51,7 +52,46 @@ const toggleModal = () => {
     
         </div>
        
+        </BrowserView>
 
+        <MobileView>
+        <div className='body-dashboard'>
+        <div className='image-div'>
+          <img style={{width:"50%", height:"100%"}} src="SarajevogasLogo2.jpg" alt="SarajevoGas Logo"></img>
+        </div>
+
+        <div className='heading-div' style={{height:"5%"}}>
+             <h3 style={{textAlign:"center", margin:"0"}}>Helpdesk</h3>
+
+        </div>
+
+        
+        <div className='greeting-message-div'>
+        <h3 style={{textAlign:"center", margin:"0", color:"#224798"}}>Dobro došli</h3>
+
+        </div>
+
+        <div className='task-heading' style={{textAlign:"center", justifyContent:"center"}}>
+            <h3 style={{margin:"0", color:"#224798"}}>Taskovi</h3>
+            <AddEditTask/>
+            
+        </div>
+        
+        <div className='card-div'>
+        <CardComponent/>
+        </div>
+
+        <div className='footer-div' style={{marginTop:"60%"}}>
+        <Button style={{textAlign:"center", textDecoration:"none", width:"10%"}} className='button' to="/index"
+                      //onClick={(e) => e.preventDefault()}
+                      size="lg"
+                      tag={Link}>Logout</Button>
+          
+        </div>
+    
+        </div>
+
+        </MobileView>
 </>
   );
 }

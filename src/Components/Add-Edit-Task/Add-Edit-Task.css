@@ -50,3 +50,19 @@ input[type="text"] {
     padding: 14px 28px;
     width: 20%;
 }
+
+.button-add{
+    padding: 10px;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 5%;
+    width: 5%;
+
+}
+
+.button-add:hover {
+  background-color: #004494;
+}
