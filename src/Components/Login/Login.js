@@ -25,7 +25,7 @@ function Login() {
             </div>
             <div className="right-side">
                 <div className="login-box">
-                    <h2 className=".h2" style={{color:"#224798"}}>Login</h2>
+                    <h2 style={{color:"#224798", textAlign:"center"}}>Login</h2>
                     <form className="form">
                         <label style={{color:"#224798"}} for="email">Email</label>
                         <input type="email" id="email" placeholder="ime.prezime@sarajevogas.ba"></input>
