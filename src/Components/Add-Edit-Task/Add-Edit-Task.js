@@ -33,7 +33,7 @@ const toggleModal = () => {
          <div className="modal">
           <div className="overlay"></div>
             <div className="modal-content">
-            <Button className="button-close" onClick={toggleModal}><img style={{width:"40%", height:"40%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
+            <Button style={{width:"10%", height:"5%"}} className="button-close" onClick={toggleModal}><img style={{marginBottom:'40%',width:"85%", height:"100%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
             <div className="login-box" style={{marginTop:"25%"}}>
                     <h2 style={{color:"#224798", textAlign:"center"}}>Dodajte Task</h2>
                     <form>

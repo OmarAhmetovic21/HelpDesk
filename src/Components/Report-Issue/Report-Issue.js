@@ -16,6 +16,14 @@ function ReportIssue() {
   return (
     <>
 
+<Button style={{textAlign:"center", textDecoration:"none"}} className='button-add'
+                      onClick={toggleModal}
+                      size="lg"
+                      tag={Link}> <BrowserView> Prijavite smetnju</BrowserView>
+                      <MobileView> Prijavite smetnju </MobileView>
+                      
+    </Button>
+
 {modal && (
          <div className="modal">
           <div className="overlay"></div>
