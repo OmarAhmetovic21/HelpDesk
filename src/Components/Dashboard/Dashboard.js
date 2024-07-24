@@ -82,7 +82,7 @@ const toggleModal = () => {
         </div>
 
         <div className='footer-div' style={{marginTop:"60%"}}>
-        <Button style={{textAlign:"center", textDecoration:"none", width:"10%"}} className='button' to="/index"
+        <Button style={{textAlign:"center", textDecoration:"none", width:"11.5%"}} className='button' to="/index"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
                       tag={Link}>Logout</Button>
