@@ -70,8 +70,8 @@ const toggleModal = () => {
                     <form>
                         <label style={{color:"#224798"}} for="email">Naslov</label>
                         <input type="email" id="email"></input>
-                        <labe style={{color:"#224798"}} for="password">Opis</labe>
-                        <input type="password" id="password"></input>
+                        <label style={{color:"#224798"}} for="password">Opis</label>
+                        <textarea name="message" rows="4" required id="password"></textarea>
                         <Button style={{textAlign:"center", textDecoration:"none"}} className='button' to="/dashboard"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"

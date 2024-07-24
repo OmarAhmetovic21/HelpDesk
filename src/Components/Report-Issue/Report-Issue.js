@@ -15,6 +15,47 @@ function ReportIssue() {
 
   return (
     <>
+
+{modal && (
+         <div className="modal">
+          <div className="overlay"></div>
+            <div className="modal-content">
+            <Button className="button-close" onClick={toggleModal}><img style={{width:"40%", height:"40%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
+            <div className="login-box" style={{marginTop:"25%"}}>
+                    <h2 style={{color:"#224798", textAlign:"center"}}>Šrijavite smetnju</h2>
+                    <form>
+          <div className="form-group">
+            <input type="text" id="name" name="name" placeholder="Ime i Prezime" required />
+          </div>
+          <div className="form-group">
+            <input type="email" id="email" name="email" placeholder="tvoj_email@sarajevogas.ba" required />
+          </div>
+          <div className="form-group">
+            <label id='porukaBoja' htmlFor="message">Poruka:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div className="form-group">
+            <select id="sector" name="sector" required>
+              <option value="" disabled selected>Izaberi sektor</option>
+              <option value="sector1">Sektor 1</option>
+              <option value="sector2">Sektor 2</option>
+              <option value="sector3">Sektor 3</option>
+            </select>
+          </div>
+          <Button style={{textAlign:"center", textDecoration:"none"}} className='button' to="/dashboard"
+                      //onClick={(e) => e.preventDefault()}
+                      size="lg"
+                      tag={Link}>Pošalji</Button>
+        </form>
+                </div>
+            </div>
+
+   
+
+
+       </div>
+       
+          )}
     
     <div className="container">
       <div className="form-container">
