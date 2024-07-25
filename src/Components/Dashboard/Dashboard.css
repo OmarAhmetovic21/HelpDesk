@@ -32,6 +32,19 @@
   padding: 0;
 }
 
+.button-logout {
+  padding: 10px;
+  background-color: #ff0808;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-logout:hover {
+  background-color: #690303;
+}
+
 .greeting-message-div{
   display: flex;
   justify-content: center;
@@ -69,18 +82,4 @@
   margin: 0;
   padding: 0;
 
-}
-
-.button-logout{
-  padding: 10px;
-  background-color: #0056b3;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-}
-
-.button-logout:hover {
-background-color: #004494;
 }

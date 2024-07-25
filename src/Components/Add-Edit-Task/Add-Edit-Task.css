@@ -12,6 +12,14 @@ body.active-modal{
     position: fixed;
 }
 
+#task-description {
+    height: 250px;
+    margin-top: 10px;
+    resize: none;
+    border: 2px solid #007F37;
+    border-radius: 4px;
+  }
+
 input[type="text"] {
     padding: 10px;
     margin-bottom: 20px;
