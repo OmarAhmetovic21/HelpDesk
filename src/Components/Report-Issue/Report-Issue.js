@@ -28,7 +28,6 @@ function ReportIssue() {
   <div className='modal'>
   <div className='overlay-issue'></div>
   <div className="container-issue">
-  {/*<div className="overlay-issue"></div>*/}
       <div className="form-container">
 
         <h2 id='issue-title-modal'>Prijavi smetnju: <Button className="button-close-issue" onClick={toggleModal}><img style={{width:"60%", height:"60%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button></h2>

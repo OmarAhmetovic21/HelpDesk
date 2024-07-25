@@ -3,9 +3,9 @@
     max-width: 600px;
     padding: 20px;
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .overlay-issue{
@@ -64,7 +64,8 @@
     border: 1px solid #ddd;
     font-size: 16px;
     outline: 0;
-    border-width: 0 0 2px;
+    border-radius: 0;
+    border-width: 0 0 2px 0;
     border-color: #007935;
     color: black;
   
