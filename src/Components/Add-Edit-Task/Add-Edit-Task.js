@@ -41,8 +41,8 @@ const toggleModal = () => {
                         <input type="text" id="title"></input>
                         <label style={{color:"#224798"}} for="password">Opis</label>
                         <textarea id="task-description" name="message" rows="4" required></textarea>
-                        <label style={{color:"#224798"}} for="password">Prioritet</label>
-                        <select id="sector" name="sector" required>
+                        <label style={{color:"#224798",  marginTop: '10px'}} for="password">Prioritet</label>
+                        <select id="priority" name="sector" required>
               <option value="" disabled selected>Izaberi prioritet</option>
               <option value="sector1">Urgentno</option>
               <option value="sector2">Visoki</option>
