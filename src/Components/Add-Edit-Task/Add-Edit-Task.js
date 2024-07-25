@@ -43,7 +43,7 @@ const toggleModal = () => {
                         <textarea id="task-description" name="message" rows="4" required></textarea>
                         <label style={{color:"#224798",  marginTop: '10px'}} for="password">Prioritet</label>
                         <select id="priority" name="sector" required>
-              <option value="" disabled selected>Izaberi prioritet</option>
+              <option value="" disabled selected>Izaberite prioritet</option>
               <option value="sector1">Urgentno</option>
               <option value="sector2">Visoki</option>
               <option value="sector3">Srednji</option>
@@ -72,7 +72,7 @@ const toggleModal = () => {
          <div className="modal">
           <div className="overlay"></div>
             <div className="modal-content" style={{width: "70%"}}>
-            <Button className="button-close" onClick={toggleModal}><img style={{width:"40%", height:"40%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
+            <Button className="button-close" onClick={toggleModal}><img style={{width:"100%", height:"100%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
             <div className="login-box" style={{marginTop:"25%"}}>
                     <h2 style={{color:"#224798", textAlign:"center"}}>Dodajte Task</h2>
                     <form>

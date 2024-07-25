@@ -124,7 +124,12 @@ body{
     
   }
   
-  input[type="email"],
+#email{
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #007F37;
+  border-radius: 4px;
+}
   input[type="password"] {
     padding: 10px;
     margin-bottom: 20px;

@@ -6,6 +6,7 @@ import CardComponent from '../Card/Card';
 import { useState } from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
 import AddEditTask from '../Add-Edit-Task/Add-Edit-Task';
+import ReportIssue from '../Report-Issue/Report-Issue';
 
 function DashBoard() {
 const [modal, setModal] = useState(false);
@@ -43,6 +44,7 @@ const toggleModal = () => {
         </div>
 
         <div className='footer-div' style={{marginTop:"17%"}}>
+        <ReportIssue/>
         <Button style={{textAlign:"center", textDecoration:"none", width:"10%"}} className='button-logout' to="/index"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
