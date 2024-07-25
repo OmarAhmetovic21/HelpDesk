@@ -34,14 +34,22 @@ const toggleModal = () => {
           <div className="overlay"></div>
             <div className="modal-content">
             <Button style={{width:"10%", height:"5%"}} className="button-close" onClick={toggleModal}><img style={{marginBottom:'40%',width:"85%", height:"100%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
-            <div className="login-box" style={{marginTop:"10%"}}>
+            <div className="login-box" style={{marginTop:"7.5%"}}>
                     <h2 style={{color:"#224798", textAlign:"center"}}>Dodajte Task</h2>
                     <form>
                         <label style={{color:"#224798"}} for="email">Naslov</label>
-                        <input type="email" id="email"></input>
-                        <labe style={{color:"#224798"}} for="password">Opis</labe>
+                        <input type="text" id="title"></input>
+                        <label style={{color:"#224798"}} for="password">Opis</label>
                         <textarea id="task-description" name="message" rows="4" required></textarea>
-                        <Button style={{textAlign:"center", textDecoration:"none"}} className='button' to="/dashboard"
+                        <label style={{color:"#224798"}} for="password">Prioritet</label>
+                        <select id="sector" name="sector" required>
+              <option value="" disabled selected>Izaberi prioritet</option>
+              <option value="sector1">Urgentno</option>
+              <option value="sector2">Visoki</option>
+              <option value="sector3">Srednji</option>
+              <option value="sector3">Niski</option>
+            </select>
+                        <Button style={{textAlign:"center", textDecoration:"none"}} className='button-save' to="/dashboard"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
                       tag={Link}>Sačuvaj</Button>
