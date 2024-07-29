@@ -27,7 +27,6 @@ const toggleModal = () => {
              <h2 style={{textAlign:"center", margin:"0"}}>Helpdesk</h2>
 
         </div>
-
         
         <div className='greeting-message-div'>
         <h2 style={{textAlign:"center", margin:"0", color:"#224798"}}>Dobro došli</h2>
@@ -44,13 +43,13 @@ const toggleModal = () => {
         </div>
 
         <div className='footer-div' style={{marginTop:"17%"}}>
-        <ReportIssue/>
         <Button style={{textAlign:"center", textDecoration:"none", width:"10%"}} className='button-logout' to="/index"
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
                       tag={Link}>Logout</Button>
           
         </div>
+        <ReportIssue/> 
     
         </div>
        
@@ -90,6 +89,7 @@ const toggleModal = () => {
                       tag={Link}>Logout</Button>
           
         </div>
+        <ReportIssue/> 
     
         </div>
 
