@@ -86,18 +86,27 @@
     resize: none;
   }
 
+  .btn-add-container{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
   .button-add-issue{
-    padding: 10px;
+    padding: 25px 25px;
     background-color: #0056b3;
     border: none;
     color: white;
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
-    height: 30px;
-    width: 5%;
     float: right;
-    margin-right: 5%;
+    font-size: 20px;
+    
+
   }
 
   #closebtn {

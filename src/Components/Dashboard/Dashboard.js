@@ -24,12 +24,18 @@ const toggleModal = () => {
         </div>
 
         <div className='heading-div'>
-             <h2 style={{textAlign:"center", margin:"0"}}>Helpdesk</h2>
+             <h2  id='h2-ds'>Helpdesk</h2>
+             <Button style={{textAlign:"center", textDecoration:"none", width:"10%"}} className='button-logout' to="/index"
+                      //onClick={(e) => e.preventDefault()}
+                      size="lg"
+                      tag={Link}>Logout</Button>
+             
 
         </div>
         
         <div className='greeting-message-div'>
         <h2 style={{textAlign:"center", margin:"0", color:"#224798"}}>Dobro došli</h2>
+        
 
         </div>
 
@@ -42,13 +48,7 @@ const toggleModal = () => {
         <CardComponent/>
         </div>
 
-        <div className='footer-div' style={{marginTop:"17%"}}>
-        <Button style={{textAlign:"center", textDecoration:"none", width:"10%"}} className='button-logout' to="/index"
-                      //onClick={(e) => e.preventDefault()}
-                      size="lg"
-                      tag={Link}>Logout</Button>
-          
-        </div>
+        
         <ReportIssue/> 
     
         </div>
@@ -82,13 +82,7 @@ const toggleModal = () => {
         <CardComponent/>
         </div>
 
-        <div className='footer-div' style={{marginTop:"60%"}}>
-        <Button style={{textAlign:"center", textDecoration:"none", width:"11.5%"}} className='button-logout-mobile' to="/index"
-                      //onClick={(e) => e.preventDefault()}
-                      size="lg"
-                      tag={Link}>Logout</Button>
-          
-        </div>
+        
         <ReportIssue/> 
     
         </div>
