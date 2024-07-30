@@ -30,7 +30,7 @@ function ReportIssue() {
   <div className="container-issue">
       <div className="form-container">
 
-        <h2 id='issue-title-modal'>Prijavi smetnju: <Button className="button-close-issue" onClick={toggleModal}><img style={{width:"60%", height:"60%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button></h2>
+        <h2 id='issue-title-modal'>Prijavi smetnju:</h2>
         <form>
           <div className="form-group">
             <input type="text" id="name" name="name" placeholder="Ime i Prezime" required />
@@ -51,6 +51,7 @@ function ReportIssue() {
             </select>
           </div>
           <button className='button-save-issue' type="submit">Pošalji</button>
+          <button onClick={toggleModal} type="button" id='closebtn'>Zatvori</button>
         </form>
       </div>
     </div>

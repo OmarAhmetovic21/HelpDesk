@@ -99,6 +99,18 @@
     float: right;
     margin-right: 5%;
   }
+
+  #closebtn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bd0e05;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
   
   .button-save-issue {
     width: 100%;
