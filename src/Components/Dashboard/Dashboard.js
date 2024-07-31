@@ -20,7 +20,7 @@ const toggleModal = () => {
     <BrowserView>
         <div className='body-dashboard'>
         <div className='image-div'>
-          <img style={{width:"25%", height:"100%"}} src="SarajevogasLogo2.jpg" alt="SarajevoGas Logo"></img>
+          <img style={{height:"100%", marginTop:"5px"}} src="SarajevogasLogo2.jpg" alt="SarajevoGas Logo"></img>
         </div>
 
         <div className='heading-div'>
@@ -34,13 +34,13 @@ const toggleModal = () => {
         </div>
         
         <div className='greeting-message-div'>
-        <h2 style={{textAlign:"center", margin:"0", color:"#224798"}}>Dobro došli</h2>
+        <h2 style={{textAlign:"center", margin:"0", color:"#224798"}}>Dobrodošao, korisnik</h2>
         
 
         </div>
 
         <div className='task-heading'>
-            <h3 style={{margin:"0", color:"#224798", marginLeft:"20%"}}>Taskovi </h3>
+            <h3 style={{margin:"10px 0px 0px 16%", color:"#224798"}}>Taskovi </h3>
             <AddEditTask/>
             
         </div>

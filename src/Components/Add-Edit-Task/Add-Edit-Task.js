@@ -23,7 +23,7 @@ const toggleModal = () => {
     <Button style={{textAlign:"center", textDecoration:"none"}} className='button-add'
                       onClick={toggleModal}
                       size="lg"
-                      tag={Link}> <BrowserView> <img style={{width:"25%", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img></BrowserView>
+                      tag={Link}> <BrowserView> <img style={{width:"20px", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img></BrowserView>
                       <MobileView> <img style={{width:"85%", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img></MobileView>
                       
     </Button>
@@ -33,7 +33,7 @@ const toggleModal = () => {
          <div className="modal">
           <div className="overlay"></div>
             <div className="modal-content">
-            <Button style={{width:"10%", height:"5%"}} className="button-close" onClick={toggleModal}><img style={{marginBottom:'40%',width:"50%", height:"100%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
+            <Button style={{width:"40px", height:"30px"}} className="button-close" onClick={toggleModal}><img style={{width:"45%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
             <div className="login-box-task" style={{marginTop:"7.5%", justifyContent:'center'}}>
                     <h2 style={{color:"#224798", textAlign:"center"}}>Dodajte Task</h2>
                     <form>

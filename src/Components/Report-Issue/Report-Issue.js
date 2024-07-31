@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
 
+
 function ReportIssue() {
 
     const [modal, setModal] = useState(false);

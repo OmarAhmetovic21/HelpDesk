@@ -30,17 +30,17 @@
   }
 
 .button-close{
-    padding: 10px;
+    padding: 4px;
     background-color: #ff0808;
     border: none;
-    border-radius: 4px;
+    
     cursor: pointer;
-    height: 20px;
+    
     float: right;
-    width: 20%;
+    
     color: white;
     border-radius: 4px;
-    justify-content: center;
+    
 }
 
 .button-close:hover {
@@ -60,7 +60,6 @@
     background-color: white;
     padding: 14px 28px;
     width: 400px;
-    height: 80%;
     border-radius: 10px;
     outline: solid #007935
 }
@@ -77,7 +76,7 @@
     border-radius: 4px;
     cursor: pointer;
     height: 20px;
-    margin-left: 5%;
+    margin-left: 3%;
     width: 5%;
 
 }
