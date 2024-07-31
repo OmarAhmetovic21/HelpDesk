@@ -82,8 +82,8 @@ const toggleModal = () => {
         <CardComponent/>
         </div>
 
-        
         <ReportIssue/> 
+
     
         </div>
 

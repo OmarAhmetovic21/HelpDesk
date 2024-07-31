@@ -23,7 +23,7 @@ const toggleModal = () => {
     <Button style={{textAlign:"center", textDecoration:"none"}} className='button-add'
                       onClick={toggleModal}
                       size="lg"
-                      tag={Link}> <BrowserView> <img style={{width:"20px", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img></BrowserView>
+                      tag={Link}> <BrowserView> <img style={{width:"25%", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img></BrowserView>
                       <MobileView> <img style={{width:"85%", height:"100%"}} src="Plus-icon.png" alt="SarajevoGas Logo"></img></MobileView>
                       
     </Button>
@@ -33,27 +33,22 @@ const toggleModal = () => {
          <div className="modal">
           <div className="overlay"></div>
             <div className="modal-content">
-            <Button style={{width:"40px", height:"30px"}} className="button-close" onClick={toggleModal}><img style={{width:"45%"}} src="X-icon.png" alt="SarajevoGas Logo"></img></Button>
             <div className="login-box-task" style={{marginTop:"7.5%", justifyContent:'center'}}>
-                    <h2 style={{color:"#224798", textAlign:"center"}}>Dodajte Task</h2>
                     <form>
-                        <label style={{color:"#224798"}} for="email">Naslov</label>
-                        <input type="text" id="title"></input>
-                        <label style={{color:"#224798"}} for="password">Opis</label>
-                        <textarea id="task-description" name="message" rows="4" required></textarea>
-                        <label style={{color:"#224798",  marginTop: '10px'}} for="password">Prioritet</label>
+                        <input placeholder="Naziv zadatka" type="text" id="title"></input>
+                        <textarea placeholder="Počnite pisati..." id="task-description" name="message" rows="4" required></textarea>
                         <select id="priority" name="sector" required>
-              <option value="" disabled selected>Izaberite prioritet</option>
+              <option value="" disabled selected>Prioritet</option>
               <option value="sector1">Urgentno</option>
               <option value="sector2">Visoki</option>
               <option value="sector3">Srednji</option>
               <option value="sector3">Niski</option>
             </select>
-                        <Button style={{textAlign:"center", textDecoration:"none"}} className='button-save' to="/dashboard"
+                        <Button style={{textAlign:"center", textDecoration:"none"}} className='button-save' onClick={toggleModal}
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
-                      tag={Link}>Sačuvaj</Button>
- 
+                      tag={Link}>Spasi</Button>
+                      <button onClick={toggleModal} type="button" id='closebtntask'>Zatvori</button>
                     </form>
                 </div>
             </div>
