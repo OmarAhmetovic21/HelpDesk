@@ -48,6 +48,18 @@
   background-color: #690303;
 }
 
+.footer-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  text-align: center;
+  height: 7.5%;
+  margin: 0;
+  padding: 0;
+  margin-top: 225px;
+}
+
 .greeting-message-div{
   display: flex;
   justify-content: center;

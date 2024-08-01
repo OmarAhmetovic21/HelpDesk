@@ -85,14 +85,14 @@
     resize: none;
   }
 
-  .btn-add-container{
+  /*.btn-add-container{
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     margin-bottom: 2%;
-  }
+  }*/
 
   .button-add-issue{
     padding: 25px 25px;
@@ -102,10 +102,7 @@
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
     font-size: 20px;
-    
-
   }
 
   #closebtn {

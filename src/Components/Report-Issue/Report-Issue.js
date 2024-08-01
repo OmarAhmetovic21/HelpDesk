@@ -16,15 +16,13 @@ function ReportIssue() {
 
   return (
     <>
-<div className='btn-add-container'> 
-  <Button className='button-add-issue'
+<Button className='button-add-issue'
                         onClick={toggleModal}
                         size="lg"
                         tag={Link}> <BrowserView> Prijavite smetnju</BrowserView>
                         <MobileView> Prijavite smetnju </MobileView>
                         
   </Button>
-</div>
 
 {modal && (
   <div className='modal'>

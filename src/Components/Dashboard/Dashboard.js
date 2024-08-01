@@ -48,8 +48,12 @@ const toggleModal = () => {
         <CardComponent/>
         </div>
 
-        
+        <div className='footer-div'>
         <ReportIssue/> 
+        </div>
+
+        
+
     
         </div>
        
