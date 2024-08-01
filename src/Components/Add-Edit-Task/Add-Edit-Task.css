@@ -117,7 +117,7 @@ option{
   padding: 10px;
   margin-top: 10px;
   border: 2px solid #007F37;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   background-color: #007F37;
   color: white;
   width: 50%;
@@ -131,7 +131,7 @@ option{
   padding: 10px;
   margin-top: 10px;
   border: 2px solid #E39806;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
   color: white;
   width: 50%;
   background-color: #E39806;
