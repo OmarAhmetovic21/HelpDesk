@@ -37,14 +37,16 @@ const toggleModal = () => {
                     <form>
                         <input placeholder="Naziv zadatka" type="text" id="title"></input>
                         <textarea placeholder="Počnite pisati..." id="task-description" name="message" rows="4" required></textarea>
-                        <input type="email" id="email-task" placeholder="Dodijelite task"></input>
+                      <div className="task-form-actions">
                         <select id="priority" name="sector" required>
-              <option value="" disabled selected>Prioritet</option>
-              <option value="sector1">Urgentno</option>
-              <option value="sector2">Visoki</option>
-              <option value="sector3">Srednji</option>
-              <option value="sector3">Niski</option>
-            </select>
+                         <option value="" disabled selected>Prioritet</option>
+                         <option value="sector1">Urgentno</option>
+                         <option value="sector2">Visoki</option>
+                         <option value="sector3">Srednji</option>
+                         <option value="sector3">Niski</option>
+                        </select>
+                        <input type="email" id="email-task" placeholder="Dodijelite task"></input>
+                      </div>
                         <Button style={{textAlign:"center", textDecoration:"none"}} className='button-save' onClick={toggleModal}
                       //onClick={(e) => e.preventDefault()}
                       size="lg"
