@@ -39,11 +39,11 @@ const toggleModal = () => {
                         <textarea placeholder="Počnite pisati..." id="task-description" name="message" rows="4" required></textarea>
                       <div className="task-form-actions">
                         <select id="priority" name="sector" required>
-                         <option value="" disabled selected>Prioritet</option>
-                         <option value="sector1">Urgentno</option>
-                         <option value="sector2">Visoki</option>
-                         <option value="sector3">Srednji</option>
-                         <option value="sector3">Niski</option>
+                         <option id="option3" value="" disabled selected>Prioritet</option>
+                         <option id="option3" value="sector1">Urgentno</option>
+                         <option id="option3" value="sector2">Visoki</option>
+                         <option id="option3" value="sector3">Srednji</option>
+                         <option id="option3" value="sector3">Niski</option>
                         </select>
                         <input type="email" id="email-task" placeholder="Dodijelite task"></input>
                       </div>

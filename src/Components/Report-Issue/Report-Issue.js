@@ -44,10 +44,10 @@ function ReportIssue() {
           </div>
           <div className="form-group">
             <select id="sector" name="sector" required>
-              <option value="" disabled selected>Izaberi sektor</option>
-              <option value="sector1">Sektor 1</option>
-              <option value="sector2">Sektor 2</option>
-              <option value="sector3">Sektor 3</option>
+              <option id='option1' value="" disabled selected>Izaberi sektor</option>
+              <option id='option2' value="sector1">Sektor 1</option>
+              <option id='option2' value="sector2">Sektor 2</option>
+              <option id='option2' value="sector3">Sektor 3</option>
             </select>
           </div>
           <button className='button-save-issue' type="submit">Pošalji</button>
