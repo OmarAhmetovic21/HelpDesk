@@ -8,11 +8,20 @@ import { BrowserView, MobileView } from "react-device-detect";
 
 function ReportIssue() {
 
-    const [modal, setModal] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+  const [modal, setModal] = useState(false);
 
-    const toggleModal = () => {
-      setModal(!modal)
+  const handleChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
+  const toggleModal = () => {
+    if (modal) {
+      // If modal is closing, reset the select value
+      setSelectedOption('');
     }
+    setModal(!modal);
+  };
 
   return (
     <>
@@ -43,7 +52,10 @@ function ReportIssue() {
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
           <div className="form-group">
-            <select id="sector" name="sector" required>
+            {/*<select  id="sector" name="sector" required>*/}
+            <select value={selectedOption}
+          onChange={handleChange}
+          className={selectedOption === '' ? 'select-default' : 'select-active'} name="sector" required>
               <option id='option1' value="" disabled selected>Izaberi sektor</option>
               <option id='option2' value="sector1">Sektor 1</option>
               <option id='option2' value="sector2">Sektor 2</option>

@@ -18,7 +18,7 @@
   color: white ;
 }
 
-/*.select-default {
+.select-default {
   background-color: #AFAFAF;
   color: #224798;
 }
@@ -26,7 +26,7 @@
 .select-active {
   background-color: #224798;
   color: white;
-}*/
+}
 
   .overlay-issue{
     width: 100%;
