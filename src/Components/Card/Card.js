@@ -1,7 +1,7 @@
 import React from "react";
 import './Card.css';
 import { BrowserView, MobileView } from "react-device-detect";
-import AddEditTask from "../Add-Edit-Task/Add-Edit-Task";
+import EditTask from "../Edit-Task/Edit-Task";
 
 
 // reactstrap components
@@ -30,7 +30,7 @@ function CardComponent() {
 
             <h3 style={{textAlign:"center"}}>Zadatak 1</h3>
 
-             <p style={{marginLeft:"5%"}}>Odnijeti računare</p>
+             <p style={{marginLeft:"5%"}}>Odnijeti računare <br/> i popraviti</p>
             <div className="card-status-div">
                       <p id='card-task-priority'>Urgetno</p>
                         <p id="card-task-assigned">Enver</p>
@@ -43,9 +43,7 @@ function CardComponent() {
 
                   </div>
 
-                 <h4 style={{color:'#224798', textAlign: 'center', marginTop: "5%", bottom:"0px"}}>
-                    Više detalja
-                </h4>
+                <EditTask/>
 
 
 
@@ -53,20 +51,32 @@ function CardComponent() {
       </BrowserView>
 
       <MobileView>
-        <div className="card-container" style={{width:"200%", height:"300%", marginLeft:"70%"}}>
+      <div className="card-container" style={{margin:"0", marginLeft:"160%",width:"200%", height: "625%"}}>
 
-            <h3 style={{textAlign:"center"}}>Zadatak 1</h3>
+<h3 style={{textAlign:"center"}}>Zadatak 1</h3>
 
-                 <p style={{marginLeft:"5%"}}>Odnijeti računare</p>
+ <p style={{marginLeft:"5%"}}>Odnijeti računare</p>
+<div className="card-status-div">
+          <p id='card-task-priority'>Urgetno</p>
+            <p id="card-task-assigned">Enver</p>
 
-            <div className="card-footer">
-                <h4 style={{color:'#224798', textAlign:'center'}}>
-                    Više detalja
-                </h4>
+      </div>
 
-            </div>
+     <div className="card-status-div">
+          <p id="card-status-caption">Status:</p>
+            <p id="card-task-progress">U toku</p>
 
-        </div>
+      </div>
+
+     <h4 style={{color:'#224798', textAlign: 'center', marginTop: "5%", bottom:"0px"}}>
+        Više detalja
+    </h4>
+
+    <EditTask/>
+
+
+
+</div>
       </MobileView>
     </>
   );
