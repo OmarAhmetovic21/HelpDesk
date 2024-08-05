@@ -39,8 +39,8 @@ const toggleModal = () => {
             
             <div className="edit-login-box-task" style={{marginTop:"7.5%", justifyContent:'center'}}>
                     <form>
-                        <input placeholder="Naziv zadatka" type="text" id="edit-title"></input>
-                        <textarea placeholder="Počnite pisati..." id="edit-task-description" name="message" rows="4" required></textarea>
+                        <input placeholder="Naziv zadatka (Edit)" type="text" id="edit-title"></input>
+                        <textarea placeholder="Počnite pisati... (Edit)" id="edit-task-description" name="message" rows="4" required></textarea>
                       <div className="edit-task-form-actions">
                         <select id="edit-priority" name="sector" required>
                          <option id="edit-option3" value="" disabled selected>Prioritet</option>
