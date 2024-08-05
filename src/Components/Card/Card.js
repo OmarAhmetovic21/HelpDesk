@@ -1,6 +1,8 @@
 import React from "react";
 import './Card.css';
 import { BrowserView, MobileView } from "react-device-detect";
+import AddEditTask from "../Add-Edit-Task/Add-Edit-Task";
+
 
 // reactstrap components
 /*import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupAddon, InputGroupText,
@@ -24,15 +26,28 @@ function CardComponent() {
   return (
     <>
     <BrowserView>
-        <div className="card-container" style={{margin:"0", marginLeft:"250%",width:"200%", height: "425%"}}>
+        <div className="card-container" style={{margin:"0", marginLeft:"160%",width:"200%", height: "625%"}}>
 
             <h3 style={{textAlign:"center"}}>Zadatak 1</h3>
 
-                 <p style={{marginLeft:"5%"}}>Odnijeti računare</p>
+             <p style={{marginLeft:"5%"}}>Odnijeti računare</p>
+            <div className="card-status-div">
+                      <p id='card-task-priority'>Urgetno</p>
+                        <p id="card-task-assigned">Enver</p>
 
-                 <h4 style={{color:'#224798', textAlign: 'center', marginTop: "30%", bottom:"0px"}}>
+                  </div>
+ 
+                 <div className="card-status-div">
+                      <p id="card-status-caption">Status:</p>
+                        <p id="card-task-progress">U toku</p>
+
+                  </div>
+
+                 <h4 style={{color:'#224798', textAlign: 'center', marginTop: "5%", bottom:"0px"}}>
                     Više detalja
                 </h4>
+
+
 
         </div>
       </BrowserView>
