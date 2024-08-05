@@ -57,3 +57,18 @@
     width: 50%;
     background-color: #007F37;
 }
+
+.task-bin{
+    display: flex;
+    width: 100%;
+    /*justify-content: flex;*/
+    justify-content: space-between;
+}
+
+#delete-task{
+    background-color: #D81010;
+    height: 10%;
+    width: 10%;
+    cursor: pointer;
+
+}

@@ -27,8 +27,13 @@ function CardComponent() {
     <>
     <BrowserView>
         <div className="card-container" style={{margin:"0", marginLeft:"160%",width:"200%", height: "625%"}}>
-
+            
+            <div className="task-bin">
             <h3 style={{textAlign:"center"}}>Zadatak 1</h3>
+            <button id="delete-task"><img style={{width:"100%", height:"100%"}} src="bin.png" alt="SarajevoGas Logo"></img></button>
+            
+            </div>
+
 
              <p style={{marginLeft:"5%"}}>Odnijeti računare <br/> i popraviti</p>
             <div className="card-status-div">
