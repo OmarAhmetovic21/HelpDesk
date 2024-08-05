@@ -29,7 +29,7 @@ function Login() {
                     <form className="form">
                         <label style={{color:"#224798"}} for="email">Email</label>
                         <input type="email" id="email" placeholder="ime.prezime@sarajevogas.ba"></input>
-                        <labe style={{color:"#224798"}} for="password">Password</labe>
+                        <label style={{color:"#224798"}} for="password">Password</label>
                         <input type="password" id="password" placeholder="Unesi svoj password"></input>
                         <Button style={{textAlign:"center", textDecoration:"none"}} className='button' to="/dashboard"
                       //onClick={(e) => e.preventDefault()}

@@ -47,6 +47,15 @@ const toggleModal = () => {
                         </select>
                         <input type="email" id="email-task" placeholder="Dodijelite task"></input>
                       </div>
+                      <div className="task-form-actions-two">
+                      <label id="status-heading">Status:</label>
+                        <select id="task-progress-select" required>
+                         <option id="option4" value="sector1">U toku</option>
+                         <option id="option4" value="sector2">Završeno</option>
+                        </select>
+
+                      </div>
+                      
                         <Button style={{textAlign:"center", textDecoration:"none"}} className='button-save' onClick={toggleModal}
                       //onClick={(e) => e.preventDefault()}
                       size="lg"

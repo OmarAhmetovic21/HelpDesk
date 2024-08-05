@@ -41,6 +41,13 @@
   justify-content: flex;
 }
 
+.task-form-actions-two{
+  display: flex;
+  width: 100%;
+  /*justify-content: flex;*/
+  justify-content: flex;
+}
+
 #task-description {
     height: 200px;
     resize: none;
@@ -104,7 +111,7 @@
 }
 
 .button-save{
-    margin-top: 20%;
+    margin-top: 10%;
     padding: 10px;
     background-color:#224798;
     color: white;
@@ -124,6 +131,14 @@
   width: 50%;
 }
 
+#status-heading{
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0 4px 4px 0;
+  color: white;
+  width: 47.5%;
+}
+
 #email-task::placeholder{
   color: white;
 }
@@ -136,4 +151,19 @@
   color: white;
   width: 50%;
   background-color: #E39806;
+}
+
+#task-progress-select{
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #6E6E6E;
+  border-radius: 4px 0 0 4px;
+  color: white;
+  width: 50%;
+  background-color: #6E6E6E;
+}
+
+#option4{
+  background-color: #6E6E6E;;
+  color: white;
 }
