@@ -41,6 +41,8 @@
   color: white;
   text-decoration: none;
   cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .edit-task-form-actions{
