@@ -26,7 +26,7 @@ function CardComponent() {
   return (
     <>
     <BrowserView>
-        <div className="card-container" style={{margin:"0", marginLeft:"160%",width:"300px", height: "625%"}}>
+        <div className="card-container" style={{margin:"0", marginLeft:"160%",width:"200%", height: "625%"}}>
             
             <div className="task-bin">
             <h3 style={{textAlign:"center"}}>Zadatak 1</h3>
@@ -34,8 +34,10 @@ function CardComponent() {
             
             </div>
 
-
-             <p id="card-task-description">Odnijeti računare i popraviti aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <div className="paragraph-container" >
+            <p style={{marginLeft:"5%", whiteSpace:"normal", overflowWrap:"break-word", maxWidth:"150px"}}>Odnijeti računare i popraviti</p>
+            </div>
+             
             <div className="card-status-div">
                       <p id='card-task-priority'>Urgetno</p>
                         <p id="card-task-assigned">Enver</p>
@@ -58,9 +60,9 @@ function CardComponent() {
       <MobileView>
       <div className="card-container" style={{margin:"0", marginLeft:"160%",width:"200%", height: "625%"}}>
 
-<h3 style={{textAlign:"center"}}>Zadatak 1</h3>
+<h3 style={{textAlign:"center", marginLeft:"34%"}}>Zadatak 1</h3>
 
- <p style={{marginLeft:"5%"}}>Odnijeti računare</p>
+ <p style={{marginLeft:"5%", whiteSpace:"normal", overflowWrap:"break-word", maxWidth:"150px"}}>Odnijeti računare</p>
 <div className="card-status-div">
           <p id='card-task-priority'>Urgetno</p>
             <p id="card-task-assigned">Enver</p>

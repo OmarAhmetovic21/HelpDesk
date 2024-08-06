@@ -2,12 +2,6 @@
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
     background-color: #D9D9D9;
-    position: relative;
-    box-sizing: border-box;
-    /*margin:"0"; 
-    margin-left: 160%;
-    width:300px,;
-    height: 625%;*/
 }
 
 .card-status-div{
@@ -67,20 +61,20 @@
 .task-bin{
     display: flex;
     width: 100%;
-    /*justify-content: flex;*/
-    justify-content: space-between;
-}
-
-#card-task-description{
-    margin: 0;
-    word-wrap: break-word;
-    white-space: normal;
+    justify-content: end;
 }
 
 #delete-task{
     background-color: #D81010;
-    height: 10%;
-    width: 10%;
+    height: 0%;
+    width: 12%;
     cursor: pointer;
+    margin-left: 25%;
+    border: #D81010;
 
+}
+
+.paragraph-container{
+    width: 150px; /* Adjust the width as needed */
+    box-sizing: border-box;
 }
