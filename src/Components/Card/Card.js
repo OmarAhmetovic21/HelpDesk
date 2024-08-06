@@ -47,7 +47,10 @@ function CardComponent() {
  
                  <div className="card-status-div">
                       <p id="card-status-caption">Status:</p>
-                        <p id="card-task-progress">U toku</p>
+                      <select id="task-progress-select" required>
+                         <option id="option4" value="sector1">U toku</option>
+                         <option id="option4" value="sector2">Završeno</option>
+                        </select>
 
                   </div>
 
