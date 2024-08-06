@@ -2,6 +2,12 @@
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
     background-color: #D9D9D9;
+    position: relative;
+    box-sizing: border-box;
+    /*margin:"0"; 
+    margin-left: 160%;
+    width:300px,;
+    height: 625%;*/
 }
 
 .card-status-div{
@@ -63,6 +69,12 @@
     width: 100%;
     /*justify-content: flex;*/
     justify-content: space-between;
+}
+
+#card-task-description{
+    margin: 0;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 #delete-task{
