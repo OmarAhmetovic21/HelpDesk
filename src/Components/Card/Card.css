@@ -74,7 +74,14 @@
 
 }
 
-.paragraph-container{
-    width: 150px; /* Adjust the width as needed */
+/*.paragraph-container{
+    width: 150px; /* Adjust the width as needed 
     box-sizing: border-box;
+}
+*/
+
+#task-description-p{
+    margin: 0;
+    word-wrap: break-word;
+    white-space: normal;
 }

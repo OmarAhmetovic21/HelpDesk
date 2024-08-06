@@ -26,7 +26,7 @@ function CardComponent() {
   return (
     <>
     <BrowserView>
-        <div className="card-container" style={{margin:"0", marginLeft:"160%",width:"200%", height: "625%"}}>
+        <div className="card-container" style={{margin:"0", marginLeft:"160%",width:"300px", height: "625%"}}>
             
             <div className="task-bin">
             <h3 style={{textAlign:"center"}}>Zadatak 1</h3>
@@ -34,9 +34,10 @@ function CardComponent() {
             
             </div>
 
-            <div className="paragraph-container" >
-            <p style={{marginLeft:"5%", whiteSpace:"normal", overflowWrap:"break-word", maxWidth:"150px"}}>Odnijeti računare i popraviti</p>
-            </div>
+            {/*<div className="paragraph-container" >
+
+            </div>*/}
+            <p id="task-description-p">Odnijeti računare i popraviti ŠTO PRIJE I HITNO</p>
              
             <div className="card-status-div">
                       <p id='card-task-priority'>Urgetno</p>
