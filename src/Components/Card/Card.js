@@ -38,6 +38,8 @@ function CardComponent() {
 
             </div>*/}
             <p id="task-description-p">Odnijeti računare i popraviti ŠTO PRIJE I HITNO</p>
+
+            <div className="card-footer">
              
             <div className="card-status-div">
                       <p id='card-task-priority'>Urgetno</p>
@@ -55,7 +57,7 @@ function CardComponent() {
                   </div>
 
                 <EditTask/>
-
+                </div>
 
 
         </div>
