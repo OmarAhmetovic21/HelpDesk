@@ -5,26 +5,50 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
 
-
-// reactstrap components
-/*import {Button, Card, CardHeader, CardBody, CardFooter, Form, Input, InputGroupAddon, InputGroupText,
-  InputGroup, Container, Col, Row} from "reactstrap";*/
-
-
-function EditTask() {
+function EditTask({ task }) {
+  // Ovdje koristimo task direktno iz props
   const [modal, setModal] = useState(false);
 
-const toggleModal = () => {
-  setModal(!modal)
-}
+  const toggleModal = () => {
+    setModal(!modal)
+  }
+
+  const handleEditSubmit = async (event) => {
+      event.preventDefault();
+
+      try {
+          const response = await fetch(`http://localhost:3000/api/tasks/${task.id}`, {
+              method: 'PUT',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ 
+                  naziv_taska: document.getElementById('edit-title').value,
+                  tekst_taska: document.getElementById('edit-task-description').value,
+                  prioritet: document.getElementById('edit-priority').value,
+                  worker_email: document.getElementById('edit-email-task').value,
+                  status: document.getElementById('edit-task-progress-select').value
+              }),
+          });
+
+          if (response.ok) {
+              alert('Task uspješno ažuriran!');
+              toggleModal(); // Zatvori modal nakon uspješne prijave
+          } else {
+              alert('Došlo je do greške prilikom ažuriranja taska.');
+          }
+      } catch (error) {
+          console.error('Greška prilikom ažuriranja taska:', error);
+          alert('Došlo je do greške prilikom ažuriranja taska.');
+      }
+  };
 
   return (
     <>
     <Button style={{textDecoration:"none"}}  className="edit-button"onClick={toggleModal}
                       size="lg"
                       tag={Link}>
-    <p
-> <BrowserView> Izmijeni</BrowserView>
+    <p> <BrowserView> Izmijeni</BrowserView>
                       <MobileView> Izmijeni</MobileView>
                       
     </p>
